@@ -1,0 +1,430 @@
+<!-- informacion -->
+<div class="container is-mobile section" style="margin-top: 2rem" id="informacion">
+
+
+
+    <div class="rows has-text-centered">
+      
+      <div class="row">
+        <figure class="is-inline-block">
+          <p class="image is-96x96">
+
+            <img [src]=" infoPersonal[0].foto  | loadImg:'perfil'">
+
+          </p>
+        </figure>
+      </div>
+    
+
+      <div class="row mt-4">
+        <h1 class="title">
+          {{ 
+            infoPersonal[0].nombreOne +' '+ infoPersonal[0].nombreTwo +' '+
+            infoPersonal[0].apellidoOne +' '+infoPersonal[0].apellidoTwo
+          }}
+        </h1>
+        <p class="subtitle is-4">
+          {{ infoPersonal[0].ocupaciones }}
+        </p>
+
+
+      </div> 
+  
+      <div class="row mt-6">
+        <a class="button is-dark m-1" target="_blank" 
+        [href]='infoPersonal[0].cv'>
+          <span class="icon">
+          <i class="fas fa-file-pdf"></i>
+          </span>
+          <span>CV</span>
+        </a>
+      
+        <a class="button is-dark m-1" target="_blank" 
+        [href]='infoPersonal[0].gitHub'>
+          <span class="icon">
+            <i class="fab fa-github"></i>
+          </span>
+          <span>GitHub</span>
+        </a>
+      
+        <a class="button is-dark m-1" target="_blank" 
+        [href]='infoPersonal[0].linkeIn'>
+          <span class="icon">
+            <i class="fab fa-linkedin"></i>
+          </span>
+          <span>LinkedIn</span>
+        </a>
+      
+        <a class="button is-dark m-1" target="_blank" 
+        [href]='infoPersonal[0].telegram'>
+          <span class="icon">
+            <i class="fab fa-telegram-plane"></i>
+          </span>
+          <span>Telegram</span>
+        </a>
+      </div>
+    </div>
+  </div>
+  
+  
+<!-- informacion -->
+<hr class="hr" style="margin-bottom: 0;">
+<div class="container is-mobile section" id="informacion">
+
+   <div class="rows">
+     
+    <div class="row">
+
+        <h1 class="title">Sobre mí</h1>
+        <div class="content">
+
+          <p class="has-text-justified">
+            {{ infoPersonal[0].descripcion }}
+          </p>
+
+          <p class="subtitle is-4">
+            Hobbies:
+          </p>
+
+          <ul>
+            <li *ngFor="let hobbie of infoPersonal[0].hobbies">
+              {{ hobbie }}
+            </li>
+          </ul>
+          <!-- <p>
+            You can simplify the CSS output by customizing these <strong>SCSS variables</strong>:
+          </p> -->
+        </div>
+  
+    </div>
+
+
+ <div class="row mt-2">
+  <p class="subtitle is-4">Estudios Realizados</p>
+  <div class="columns">
+    <div class="column" *ngFor="let estudio of infoEstudios">
+      <article class="media">
+    <!--     <figure class="media-left">
+          <p class="image is-64x64">
+            <img src="">
+          </p>
+        </figure> -->
+        <div class="media-content">
+          <div class="content">
+            <!-- <p> -->
+              <p class="subtitle is-5 mt-1">{{ estudio.titulo }} ({{ estudio.status }})</p>
+              <small> {{ estudio.nombre }} ({{ estudio.siglas }}) </small> 
+              <!-- <b> </b> -->
+              <br>
+              <b> Inicio: </b> {{ estudio.inicio }}
+              <b> Fin: </b> {{ estudio.fin }}
+            <!-- </p> -->
+          </div>
+          <nav class="level is-mobile">
+            <div class="level-left">
+              <!-- <a class="level-item">
+                <span class="icon is-small"><i class="fab fa-reply"></i></span>
+              </a>
+              <a class="level-item">
+                <span class="icon is-small"><i class="fab fa-retweet"></i></span>
+              </a>
+              <a class="level-item">
+                <span class="icon is-small"><i class="fab fa-heart"></i></span>
+              </a> -->
+            </div>
+          </nav>
+        </div>
+      </article>
+    </div>
+    </div>
+  </div>
+</div>
+</div>
+
+  <!-- Habilidades -->
+<hr class="hr" style="margin-bottom: 0;">
+<div class="container is-mobile section" id="habilidades">
+  
+      <h1 class="title">Habilidades</h1>
+  
+      <p class="subtitle is-4 mt-1">Tecnologías</p>
+      <div class="columns is-multiline">
+        <div class="column is-2"
+        *ngFor="let tecnologia of infoTecnologias"
+        >
+            <div class="media">
+              <div class="media-left">
+                <figure class="image is-32x32">
+                  <img [src]=" tecnologia.nombre.toLowerCase()  | loadsvg:'tecnologias'"
+                      
+                  >
+                </figure>
+              </div>
+              <div class="media-content">
+                <h6 class="subtitle is-6">
+                {{ tecnologia.nombre }}</h6>
+              </div>
+            </div>
+            <div class="bd-snippet-preview mt-2">
+            <progress class="progress is-small" [value]="tecnologia.nivel" max="10">{{ tecnologia.nivel }}</progress>
+          </div>
+        </div> 
+    </div>
+
+
+    <p class=" subtitle is-4 mt-1">Bases de Datos </p>
+  
+    <div class="columns is-multiline">
+
+      <div class="column "
+      *ngFor="let basedato of infoBaseDatos"
+      >
+      <div class="media">
+        <div class="media-left">
+          <figure class="image is-48x48">
+            <img [src]=" basedato.nombre.toLowerCase()  | loadsvg:'tecnologias'">
+          </figure>
+        </div>
+        <div class="media-content">
+            <h6 class="subtitle is-5">{{ basedato.nombre }}</h6>
+        </div>
+      </div>
+      <div class="bd-snippet-preview mt-2">
+          <progress class="progress is-small" [value]="basedato.nivel" max="10">{{ basedato.nivel }}</progress>
+        </div>
+      </div> 
+    </div> 
+  
+    <p class=" subtitle is-4 mt-1">Lenguajes de Programación </p>
+    <div class="columns is-multiline">
+      <div class="column "
+      *ngFor="let lenguaje of infoLenguajesProgramacion"
+      >
+      <div class="media">
+        <div class="media-left">
+          <figure class="image is-48x48">
+            <img [src]=" lenguaje.nombre.toLowerCase()  | loadsvg:'tecnologias'">
+          </figure>
+        </div>
+        <div class="media-content">
+          <h6 class="subtitle is-5">{{ lenguaje.nombre }}</h6>
+        </div>
+      </div>
+      <div class="bd-snippet-preview mt-2">
+          <progress class="progress is-small" [value]="lenguaje.nivel" max="10">{{ lenguaje.nivel }}</progress> 
+        </div>
+      </div>  
+  </div>
+</div>
+  
+  
+  <!-- portafolio -->
+<hr class="hr" style="margin-bottom: 0;">
+<div class="container is-mobile section" id="portafolio">
+  
+  <h1 class="title">Portafolio</h1>
+  <div class="columns is-multiline">
+    <div class="column is-4"
+    *ngFor="let sistema of infoSistemasRealizados"
+    >
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-4by3">
+            <img 
+            [src]="sistema.img_s[0] | loadImg:sistema.carpetaImg" 
+            [alt]="sistema.name">
+          </figure>
+        </div>
+        <div class="card-content">
+          <!-- <div class="media">
+            <div class="media-left">
+              <figure class="image is-48x48">
+                <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
+              </figure>
+            </div>
+            <div class="media-content">
+              <p class="title is-4">John Smith</p>
+              <p class="subtitle is-6">@johnsmith</p>
+            </div>
+          </div> -->
+          <div class="media-content">
+            <p class="title is-5">{{ sistema.name }}</p>
+          </div>
+          <div class="content mt-1">
+           <p class="has-text-justified"> {{ sistema.descripcion.substr(0,120) }} ...</p> 
+            <div class="tags mt-2">
+              <span class="tag is-dark is-rounded"
+              *ngFor="let tecnologia of sistema.tecnologias"
+              >{{ tecnologia }}</span>
+  
+            </div>
+            <!-- <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time> -->
+          </div>
+            <button class="button is-fullwidth is-rounded"
+            (click)="detailsSystem(sistema.id)"
+            >
+              <span class="icon">
+                <i class="fas fa-info-circle"></i>
+              </span>
+              <span>Más info...</span>
+            </button>
+        </div>
+      </div>
+    </div>  
+  </div>
+</div>
+  
+  
+  <!-- Experiencia -->
+  
+  <hr class="hr" style="margin-bottom: 0;">
+  <div class="container is-mobile section" id="experiencia">
+    <h1 class="title">Experiencia</h1>
+    <div class="rows" 
+    *ngFor="let experiencia of infoExperienciaLaboral"
+    >
+      <div class="row">
+        <span  class="subtitle is-4 mt-2">{{ experiencia.nombre }}</span>
+         <br>
+        <span  class="subtitle is-6">{{ experiencia.areaEmpresa }}</span>
+        <article class="media">
+          <!-- <figure class="media-left">
+            <p class="image is-64x64">
+              <img src="">
+            </p>
+          </figure> -->
+          <div class="media-content ml-4">
+            <div class="content">
+              <p>
+                <strong>{{ experiencia.cargo }}</strong>
+                <br>
+                <strong>Tareas: </strong>{{ experiencia.tareas }}
+                <br>
+                <strong>Tiempo: </strong>{{ experiencia.inicio }} - {{ experiencia.fin }}
+                <!--<br>
+                <small><a>Like</a> • <a>Reply</a> • 3 hrs</small>-->
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+      <br>
+    </div>
+  </div>
+    
+  
+  <!-- form contact -->
+  <hr class="hr" style="margin-bottom: 0;">
+  <div class="container is-mobile section" id="contacto">
+  
+    <h1 class="title">Formulario de Contacto</h1>
+  
+<form [formGroup]="contactoForm" (ngSubmit)="onSubmit()">  
+   <div class="field">
+      <label class="label">Nombre y Apellido</label>
+      <div class="control">
+        <input class="input is-rounded" type="text" placeholder="Albus Percival Wulfric Brian Dumbledore"
+        name="nombre"
+        formControlName="nombre"
+        [ngClass]="{ 'is-danger': submitted && f.nombre.errors }"
+        />
+      </div>
+        <div *ngIf="submitted && f.nombre.errors" class="">
+            <p *ngIf="f.nombre.errors.required" class="help is-danger is-">Nombre es requerido</p>
+        </div>
+    </div>
+    
+    <div class="field">
+      <label class="label">Asunto</label>
+      <div class="control">
+        <div class="select is-rounded">
+          <select
+            name="asunto"
+            formControlName="asunto"
+            [ngClass]="{ 'is-danger': submitted && f.asunto.errors }"
+          >
+            <option 
+            *ngFor="let option of selectOptiion"
+            [value]="option" 
+            >{{ option }}</option>
+          </select>
+        </div>
+      </div>
+       <div *ngIf="submitted && f.asunto.errors" class="">
+          <p *ngIf="f.asunto.errors.required" class="help is-danger is-">Asunto es requerido</p>
+        </div>
+    </div>
+  
+    <div class="field">
+      <label class="label">Correo de contacto</label>
+      <div class="control">
+        <input class="input is-rounded" type="mail" placeholder="Correo a donde te responderé..."
+        name="correo"
+        formControlName="correo"
+        [ngClass]="{ 'is-danger': submitted && f.correo.errors }"
+        />
+      </div>
+        <div *ngIf="submitted && f.correo.errors" class="">
+            <p *ngIf="f.correo.errors.required" class="help is-danger is-">Correo es requerido</p>
+            <p *ngIf="f.correo.errors.email" class="help is-danger is-">Ingrese un correo valido</p>
+        </div>
+    </div>
+  
+    <div class="field">
+      <label class="label">Mensaje</label>
+      <div class="control">
+        <textarea class="textarea is-rounded" placeholder="Hazme saber tu mensaje... &#10;Hola soy Albus Dumbledore, de la Academia de Magia y Hechiseria Hodwarts, te escribo para..."
+          name="mensaje"
+          formControlName="mensaje"
+          [ngClass]="{ 'is-danger': submitted && f.mensaje.errors }"
+        ></textarea>
+      </div>
+        <div *ngIf="submitted && f.mensaje.errors" class="">
+              <p *ngIf="f.mensaje.errors.required" class="help is-danger is-">Mensaje es requerido</p>
+        </div>
+    </div>
+    
+    <div class="field">
+      <div class="control">
+        <label class="checkbox">
+          <input type="checkbox" 
+          formControlName="acceptoContacto"
+          [ngClass]="{ 'is-danger': submitted && f.acceptoContacto.errors }"
+          >
+          Aceptas que te contacte por el correo que estas ingresando? <!-- <a href="#">terms and conditions</a> -->
+        </label>
+      </div>
+      <div *ngIf="submitted && f.acceptoContacto.errors" class="">
+          <p *ngIf="f.acceptoContacto.errors.required" class="help is-danger is-">Es requerido</p>
+      </div>
+    </div>
+        
+    <div class="field is-grouped">
+      <button 
+      [disabled]="loading"
+      [ngClass]="{'': !loading, 'is-loading': loading}"
+      class="button is-rounded is-dark"
+      >
+        <span class="icon">
+          <!-- <i class="fab fa-telegram"></i> -->
+          <i  
+            [ngClass]="{'fa-telegram': !loading, '': loading}"
+            class="fab"></i>
+        </span>
+        <span>Enviar</span>
+      </button>
+
+      <button (click)="onReset()"
+      class="button  ml-2 is-rounded is-danger ">
+        <span class="icon">
+          <i class="fas fa-trash"></i>
+        </span>
+        <span>limpiar</span>
+      </button>
+
+    </div>
+</form>
+
+
+</div>
+  

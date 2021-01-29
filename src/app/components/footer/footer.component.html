@@ -1,0 +1,31 @@
+<footer class="footer mt-2">
+  <div class="columns">
+    <div class="column">
+      <div class="content has-text-centered">
+    <p>
+      Desarrollado por
+      <strong> {{ infoPersonal[0].nombreOne }} {{ infoPersonal[0].apellidoOne }} </strong>Copyright © {{ anio }}            
+    </p>
+        <a
+        [href]="infoPersonal[0].gitHub"
+        >
+          <span class="icon">
+            <i class="fab fa-github"></i>
+          </span>
+          <span>Github</span>
+        </a>
+
+        <a
+        [href]="infoPersonal[0].linkeIn"
+        >
+          <span class="icon">
+            <i class="fab fa-linkedin"></i>
+          </span>
+          <span>LinkedIn</span>
+        </a>
+        
+      </div>
+    </div>
+  </div>
+</footer>
+

@@ -1,0 +1,11 @@
+/* You can add global styles to this file, and also import other style files */
+
+.main{
+    display: flex;
+    min-height: 55vh;
+    flex-direction: column;
+}
+.section{
+	flex: 1;
+}
+

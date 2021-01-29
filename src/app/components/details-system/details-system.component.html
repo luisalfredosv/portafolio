@@ -1,0 +1,103 @@
+<div class="container is-mobile main" style="margin-top: 2.5rem"
+*ngIf="!sistema"
+>
+  <h1 class="title">Error: No existe! un sistema con ese ID</h1>
+</div>
+
+<div class="container is-mobile main" style="margin-top: 2.5rem"
+*ngIf="sistema"
+>
+<div class="section">
+  
+     <h1 class="subtitle is-4">Detalles de: <strong class="title is-4">{{ sistema.name }}</strong></h1>
+
+    <nav class="breadcrumb  is-mobile" aria-label="breadcrumbs">
+       <ul>
+          <li><a [routerLink]="['/inicio']" fragment="portafolio">
+             <span class="icon is-small">
+                <i class="fas fa-home" aria-hidden="true"></i>
+             </span>
+             <span>Inicio</span>
+          </a></li>
+          <li class="is-active"><a aria-current="page">Detalles</a></li>
+
+       </ul>
+    </nav>
+
+<!-- <div class="columns is-multiline"> -->
+  <p-carousel 
+    [value]="sistema.img_s" 
+    [numVisible]="1" 
+    [numScroll]="1" 
+    [responsiveOptions]="responsiveOptions"
+  >
+    <ng-template let-img  pTemplate="item"
+    >
+        <img (click)="getImgGrande(img, sistema.id)"
+        [src]="img | loadImg:sistema.carpetaImg" 
+        alt="sistema.name" 
+        />
+        
+    </ng-template>
+</p-carousel>
+<!-- </div>   -->
+ 
+   <div class="columns is-multiline">
+      <div class="column is-12">
+         <h3 class="subtitle is-4">Tecnologías</h3>
+         <div class="tags">
+            <span class="tag is-rounded is-dark"
+            *ngFor="let tecnologia of sistema.tecnologias"
+            >{{ tecnologia }}</span>
+
+          </div>
+      </div>
+      
+      <div class="column is-6">
+
+        
+
+        <div>
+          <div class="content">
+            <p class="subtitle is-4">Desarrollado para: {{ sistema.empresa }}</p>
+            <p class="has-text-justified">{{ sistema.descripcion }}.</p>
+          </div>
+        </div>
+      
+        </div>
+
+        <div class="column is-6">
+        <div class="content">
+          <div *ngIf="sistema.acciones?.length > 0">
+            <p class="subtitle is-4">Acciones:</p>
+              <ul>
+                <li *ngFor="let accion of sistema.acciones">{{ accion }}.</li>
+              </ul>
+          </div>
+
+          <div *ngIf="sistema.tareas?.length > 0">
+            <p class="subtitle is-4">Tareas:</p>
+              <ul>
+                <li *ngFor="let tarea of sistema.tareas">{{ tarea }}.</li>
+              </ul>
+          </div>
+          </div>
+          
+      </div>
+    </div>
+
+</div>
+</div>
+
+<div class="modal" #modalImg>
+  <div class="modal-background"></div>
+  <!-- <div class="modal-content">
+    <p class="image is-4by3"> -->
+      <img class="image" 
+      *ngIf="idImg > 0"
+      [src]="idImg | loadImg:sistema.carpetaImg" alt="">
+    <!-- </p>
+  </div> -->
+  <button class="modal-close is-large" aria-label="close" (click)="closeImgGrande()"></button>
+</div>
+
