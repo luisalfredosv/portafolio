@@ -103,13 +103,13 @@ export class HomeComponent implements OnInit {
 
 
   leerStorage(){
-      console.log('store_on');
+      // console.log('store_on');
 
     if(localStorage.getItem('correoLS')){
       this.latestLS = JSON.parse(localStorage.getItem('latestLS'));
       this.correoLS = localStorage.getItem('correoLS');
       this.countLS = JSON.parse(localStorage.getItem('countLS'));
-      console.log('store_load');
+      // console.log('store_load');
     }
   }
 

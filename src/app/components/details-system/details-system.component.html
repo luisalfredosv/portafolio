@@ -13,7 +13,7 @@
 
     <nav class="breadcrumb  is-mobile" aria-label="breadcrumbs">
        <ul>
-          <li><a [routerLink]="['/inicio']" fragment="portafolio">
+           <li><a [routerLink]="['/inicio']"> <!-- fragment="portafolio" -->
              <span class="icon is-small">
                 <i class="fas fa-home" aria-hidden="true"></i>
              </span>
@@ -66,7 +66,9 @@
       
         </div>
 
-        <div class="column is-6">
+ <div class="column is-1">
+</div>
+        <div class="column is-5">
         <div class="content">
           <div *ngIf="sistema.acciones?.length > 0">
             <p class="subtitle is-4">Acciones:</p>

@@ -251,7 +251,9 @@
             <p class="title is-5">{{ sistema.name }}</p>
           </div>
           <div class="content mt-1">
-           <p class="has-text-justified"> {{ sistema.descripcion.substr(0,120) }} ...</p> 
+              <p class="has-text-justified"> {{ sistema.descripcion.substr(0,85) }}...
+                <a (click)="detailsSystem(sistema.id)"> ver más</a>
+              </p> 
             <div class="tags mt-2">
               <span class="tag is-dark is-rounded"
               *ngFor="let tecnologia of sistema.tecnologias"

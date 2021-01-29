@@ -2,7 +2,7 @@ import { Component, OnInit, ViewChild, ElementRef, Injectable, Renderer2 } from 
 import { ActivatedRoute, Router } from '@angular/router';
 import { InterfaceSistemasRealizados } from 'src/app/interfaces/interfaces';
 import { DataInfoService } from 'src/app/services/data-info.service';
-
+import { Location } from '@angular/common';
 @Component({
   selector: 'app-details-system',
   templateUrl: './details-system.component.html'
@@ -13,7 +13,8 @@ export class DetailsSystemComponent implements OnInit {
   constructor(  private DIS: DataInfoService,
                 private router: ActivatedRoute, 
                 private route: Router,
-                private renderer: Renderer2) {
+                private renderer: Renderer2,
+                private _location:Location) {
     
                   this.responsiveOptions = [
                     {
@@ -44,7 +45,7 @@ export class DetailsSystemComponent implements OnInit {
 
   getImgGrande(idImg: number, idSistema: number ){
     this.idImg = idImg;
-    console.log(`img: ${idImg} sistema: ${idSistema}`);
+    // console.log(`img: ${idImg} sistema: ${idSistema}`);
 
     this.modalImg.nativeElement.classList.toggle('is-active');
     
@@ -58,7 +59,8 @@ export class DetailsSystemComponent implements OnInit {
 
 
   goBack(){
-    this.route.navigate(['/inicio']);
+    // this.route.navigate(['/inicio']);
+     this._location.back();
   }
 
   ngOnInit(): void {
