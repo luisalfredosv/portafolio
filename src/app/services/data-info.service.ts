@@ -54,7 +54,7 @@ infoPersonal : InterfacePersonal[] = [
             'Probar nuevas tecnologías siguiendo cursos.',
             'Ver anime y series.',
             'Escuchar música dubstep o electrojunkie.', 
-            'Jugar PUGMobile, factorio, COD, CSGO.',
+            'Jugar PUBG Mobile, Factorio, COD, CSGO, Royal Revolt 2, EuroTruck 2',
             'Leer informaciones sobre el mundo tecnológico y nuevos avances.'
         ],
 
