@@ -3,10 +3,10 @@
     <div class="column">
       <div class="content has-text-centered">
     <p>
-      Desarrollado por
-      <strong> {{ infoPersonal[0].nombreOne }} {{ infoPersonal[0].apellidoOne }} </strong>Copyright © {{ anio }}            
+      &copy; {{ anio }} por 
+      <strong> {{ infoPersonal[0].nombreOne }} {{ infoPersonal[0].apellidoOne }} </strong>
     </p>
-        <a
+        <a target="_blank" 
         [href]="infoPersonal[0].gitHub"
         >
           <span class="icon">
@@ -15,7 +15,7 @@
           <span>Github</span>
         </a>
 
-        <a
+        <a target="_blank" 
         [href]="infoPersonal[0].linkeIn"
         >
           <span class="icon">

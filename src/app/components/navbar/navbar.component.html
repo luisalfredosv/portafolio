@@ -24,9 +24,6 @@
     #navMenu
     >
       <div class="navbar-start">
-        <!-- <a class="navbar-item" href="#inicio">
-          Inicio
-        </a> -->
   
         <a class="navbar-item" [routerLink]="['inicio']" fragment="informacion" (click)="toggleNavbar()">
           Información
@@ -47,51 +44,31 @@
         <a class="navbar-item"  [routerLink]="['inicio']" fragment="contacto" (click)="toggleNavbar()">
           Contacto
         </a>
-        <!--<div class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link">
-            Habilidades
-          </a>
-  
-           <div class="navbar-dropdown">
-            <a class="navbar-item">
-              About
-            </a>
-            <a class="navbar-item">
-              Jobs
-            </a>
-            <a class="navbar-item">
-              Contact
-            </a>
-            <hr class="navbar-divider">
-            <a class="navbar-item">
-              Report an issue
-            </a>
-          </div> 
-         </div> -->
+
       </div>
   
       <div class="navbar-end">
         <div class="navbar-item">
     
-        <a class="button is-rounded"
-        [href]='infoPersonal[0].gitHub'>
-          <span class="icon">
-            <i class="fab fa-github"></i>
-          </span>
-          <span>GitHub</span>
-        </a>
+          <a class="button is-rounded" target="_blank" 
+          [href]='infoPersonal[0].gitHub'>
+            <span class="icon">
+              <i class="fab fa-github"></i>
+            </span>
+            <span>GitHub</span>
+          </a>
+        
+        
+          <a class="button is-rounded ml-2" target="_blank" 
+          [href]="infoPersonal[0].linkeIn"
+          >
+            <span class="icon">
+              <i class="fab fa-linkedin"></i>
+            </span>
+            <span>Linkedin</span>
+          </a>
       
-      
-        <a class="button is-rounded ml-2"
-        [href]="infoPersonal[0].linkeIn"
-        >
-          <span class="icon">
-            <i class="fab fa-linkedin"></i>
-          </span>
-          <span>Linkedin</span>
-        </a>
-      
-      </div>
+        </div>
   
       
       </div>

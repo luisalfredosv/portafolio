@@ -58,7 +58,7 @@ infoPersonal : InterfacePersonal[] = [
             'Leer informaciones sobre el mundo tecnológico y nuevos avances.'
         ],
 
-        descripcion:'Hola soy Luis, un desarrollador semi-senior con mas de 5 años de experiencia en el desarrollo de webapp. Soy un apasionado por el arte de la programación, por crear herramientas y soluciones informáticas, soy TSU en Análisis de Sistemas, actualmente me encuentro estudiando el 3er año de Ingeniería en Informática, he tenido múltiples experiencias a nivel laboral que me han ayudado a mejorar mis conocimientos, siempre me encuentro haciendo cursos e investigando nuevas tecnologías y probándolas con el fin de aprender y elegir la correcta cuando sea necesario… ',
+        descripcion:'Hola soy Luis, un desarrollador semi-senior con 5 años de experiencia en el desarrollo de webapp. Soy un apasionado por el arte de la programación, por crear herramientas y soluciones informáticas, soy TSU en Análisis de Sistemas, actualmente me encuentro estudiando el 3er año de Ingeniería en Informática, he tenido múltiples experiencias a nivel laboral que me han ayudado a mejorar mis conocimientos, siempre me encuentro haciendo cursos e investigando nuevas tecnologías y probándolas con el fin de aprender y elegir la correcta cuando sea necesario… ',
 
     }
 ];

@@ -75,6 +75,13 @@ export class HomeComponent implements OnInit {
 
     this.leerStorage();
 
+    setTimeout(() => {
+      this.ToastMensaje(
+        'info', 
+        'Notificación', 
+        'Hola, este sitio web aún está en construcción, si ves algo mal por favor házmelo saber..!');
+    }, 10000);  
+
   }
 
   detailsSystem(id:number){
