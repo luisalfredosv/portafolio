@@ -46,7 +46,7 @@ infoPersonal : InterfacePersonal[] = [
         correoOne: 'luissarabia80@gmail.com',
         correoTwo: 'lasv80@outlook.com',
         telegram: 'https://t.me/LuisAlfredo_SV',
-        linkeIn: 'https://linkedin.com/in/luis-alfredo-sv-35b670173',
+        linkeIn: 'https://linkedin.com/in/luisalfredosv',
         gitHub: 'https://github.com/luisalfredosv',
         cv: 'assets/docs/CV-Luis-Sarabia.pdf',
         ocupaciones: ['Desarrollador Full-Stack de WebApps'],
