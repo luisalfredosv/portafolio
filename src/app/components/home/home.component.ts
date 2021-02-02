@@ -87,7 +87,8 @@ export class HomeComponent implements OnInit {
 
   verifNotificacion(){
     if(localStorage.getItem('notificacion')){
-      if(localStorage.getItem('notificacion') < 1){
+      let notificacion : number = JSON.parse(localStorage.getItem('notificacion')); 
+      if( notificacion < 1){
         this.showNotificacion();
       }
     }else{
@@ -103,7 +104,7 @@ export class HomeComponent implements OnInit {
         'Hola, este sitio web aún está en construcción, si ves algo mal por favor házmelo saber..!');
     }, 10000); 
 
-    localStorage.setItem('notificacion', 1);
+    localStorage.setItem('notificacion', JSON.stringify(1));
   }
 
   detailsSystem(id:number){
