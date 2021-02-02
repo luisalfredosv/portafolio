@@ -33,7 +33,13 @@ export class HomeComponent implements OnInit {
   infoLenguajesProgramacion : InterfaceTechPrograming[] = [];
   infoBaseDatos : InterfaceTechPrograming[] = [];
 
-  selectOptiion : any[] = ['Sugerencia','Cotización','Información','Otro..']
+  selectOptiion : any[] = [  
+                            'Oferta laboral',
+                            'Sugerencia',
+                            'Cotización',
+                            'Información',
+                            'Otro..'
+                          ];
 
   contactoForm: FormGroup;
   submitted = false;
@@ -42,7 +48,7 @@ export class HomeComponent implements OnInit {
   correoLS: string;
   countLS: number = 0;
 
-  limitSendCorreo: number = 3;
+  limitSendCorreo: number = 2;
 
   loading : boolean = false;
 
@@ -75,13 +81,29 @@ export class HomeComponent implements OnInit {
 
     this.leerStorage();
 
-    setTimeout(() => {
+   this.verifNotificacion();
+
+  }
+
+  verifNotificacion(){
+    if(localStorage.getItem('notificacion')){
+      if(localStorage.getItem('notificacion') < 1){
+        this.showNotificacion();
+      }
+    }else{
+      this.showNotificacion();
+    }
+  }
+
+  showNotificacion(){
+     setTimeout(() => {
       this.ToastMensaje(
         'info', 
         'Notificación', 
         'Hola, este sitio web aún está en construcción, si ves algo mal por favor házmelo saber..!');
-    }, 10000);  
+    }, 10000); 
 
+    localStorage.setItem('notificacion', 1);
   }
 
   detailsSystem(id:number){

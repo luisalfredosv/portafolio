@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef, Renderer2 } from '@angular/core';
 import { InterfacePersonal, InterfaceSistemasRealizados, InterfaceEstudios, InterfaceExperienciaLaboral, InterfaceTechPrograming } from 'src/app/interfaces/interfaces';
 import { DataInfoService } from 'src/app/services/data-info.service';
 
@@ -11,6 +11,8 @@ import { DataInfoService } from 'src/app/services/data-info.service';
 export class FooterComponent implements OnInit {
 
 anio: number;
+
+//@ViewChild('footer')footer: ElementRef;
 
 // infoPersonal                 || Datos personales
 

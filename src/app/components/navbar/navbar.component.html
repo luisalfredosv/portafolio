@@ -1,76 +1,84 @@
-<nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-      <a class="navbar-item is-family-code has-text-weight-bold" [routerLink]="['inicio']">
-        <!-- <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28"> -->
+<nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation" #navBar>
+  <div class="navbar-brand">
+    <a class="navbar-item is-family-code has-text-weight-bold" [routerLink]="['inicio']">
+      <!-- <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28"> -->
+  
+      <i class="fas fa-terminal">
+        &nbsp; {{ infoPersonal[0].userName }}
+      </i> 
+ 
+    </a>
     
-        <i class="fas fa-terminal">
-          &nbsp; {{ infoPersonal[0].userName }}
-        </i> 
-   
-      </a>
-      
-  
-      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample"
-      (click)="toggleNavbar()"
-      #navBurger
-      >
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-      </a>
-    </div>
-  
-    <div id="navbarBasicExample" class="navbar-menu"
-    #navMenu
-    >
-      <div class="navbar-start">
-  
-        <a class="navbar-item" [routerLink]="['inicio']" fragment="informacion" (click)="toggleNavbar()">
-          Información
-        </a>
-  
-        <a class="navbar-item"  [routerLink]="['inicio']" fragment="habilidades" (click)="toggleNavbar()">
-          Habilidades
-        </a>
-  
-        <a class="navbar-item"  [routerLink]="['inicio']" fragment="portafolio" (click)="toggleNavbar()">
-          Portafolio
-        </a>
-  
-        <a class="navbar-item"  [routerLink]="['inicio']" fragment="experiencia" (click)="toggleNavbar()">
-          Experiencia
-        </a>
-  
-        <a class="navbar-item"  [routerLink]="['inicio']" fragment="contacto" (click)="toggleNavbar()">
-          Contacto
-        </a>
+<!--       <div class="navbar-item">
+        <p-inputSwitch [ngModel]="checked" (ngModelChange)="mode($event)"></p-inputSwitch>
+      </div> -->
 
-      </div>
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample"
+    (click)="toggleNavbar()"
+    #navBurger
+    >
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+
+
+  </div>
   
-      <div class="navbar-end">
-        <div class="navbar-item">
-    
-          <a class="button is-rounded" target="_blank" 
-          [href]='infoPersonal[0].gitHub'>
-            <span class="icon">
-              <i class="fab fa-github"></i>
-            </span>
-            <span>GitHub</span>
-          </a>
-        
-        
-          <a class="button is-rounded ml-2" target="_blank" 
-          [href]="infoPersonal[0].linkeIn"
-          >
-            <span class="icon">
-              <i class="fab fa-linkedin"></i>
-            </span>
-            <span>Linkedin</span>
-          </a>
-      
-        </div>
-  
-      
-      </div>
+  <div id="navbarBasicExample" class="navbar-menu"
+  #navMenu
+  >
+    <div class="navbar-start">
+
+      <a class="navbar-item" [routerLink]="['inicio']" fragment="informacion" (click)="toggleNavbar()" routerLinkActive="active">
+        Información
+      </a>
+
+      <a class="navbar-item"  [routerLink]="['inicio']" fragment="habilidades" (click)="toggleNavbar()" routerLinkActive="active">
+        Habilidades
+      </a>
+
+      <a class="navbar-item"  [routerLink]="['inicio']" fragment="portafolio" (click)="toggleNavbar()" routerLinkActive="active">
+        Portafolio
+      </a>
+
+      <a class="navbar-item"  [routerLink]="['inicio']" fragment="experiencia" (click)="toggleNavbar()" routerLinkActive="active">
+        Experiencia
+      </a>
+
+      <a class="navbar-item"  [routerLink]="['inicio']" fragment="contacto" (click)="toggleNavbar()" routerLinkActive="active">
+        Contacto
+      </a>
+
     </div>
-  </nav>
+
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <!-- <p-inputSwitch [ngModel]="checked" (ngModelChange)="mode($event)"></p-inputSwitch> -->
+      </div>
+      <div class="navbar-item">
+  
+        <a class="button" target="_blank" #navBtn
+        [href]='infoPersonal[0].gitHub'>
+          <span class="icon">
+            <i class="fab fa-github"></i>
+          </span>
+          <span>GitHub</span>
+        </a>
+      
+      
+        <a class="button ml-2" target="_blank" #navBtn2
+        [href]="infoPersonal[0].linkeIn"
+        >
+          <span class="icon">
+            <i class="fab fa-linkedin"></i>
+          </span>
+          <span>Linkedin</span>
+        </a>
+    
+      </div>
+
+    
+    </div>
+  </div>
+</nav>

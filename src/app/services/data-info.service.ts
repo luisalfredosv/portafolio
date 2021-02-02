@@ -45,14 +45,14 @@ infoPersonal : InterfacePersonal[] = [
         ],
         correoOne: 'luissarabia80@gmail.com',
         correoTwo: 'lasv80@outlook.com',
-        telegram: 'https://t.me/LuisAlfredo_SV',
+        telegram: 'https://t.me/luisalfredosv',
         linkeIn: 'https://linkedin.com/in/luisalfredosv',
         gitHub: 'https://github.com/luisalfredosv',
-        cv: 'assets/docs/CV-Luis-Sarabia.pdf',
+        cv: 'assets/docs/cv-dev-luis-sarabia.pdf',
         ocupaciones: ['Desarrollador Full-Stack de WebApps'],
         hobbies:[
             'Probar nuevas tecnologías siguiendo cursos.',
-            'Ver anime y series.',
+            'Ver documentales, series y películas.',
             'Escuchar música dubstep o electrojunkie.', 
             'Jugar PUBG Mobile, Factorio, COD, CSGO, Royal Revolt 2, EuroTruck 2',
             'Leer informaciones sobre el mundo tecnológico y nuevos avances.'
@@ -138,7 +138,7 @@ infoPersonal : InterfacePersonal[] = [
     },
     {
         id: 5,
-        name: 'Modulo de gestión Pagos',
+        name: 'Modulo de Gestión Pagos',
         empresa: 'Así de Rápido C.A',
         tecnologias: ['PHP', 'YiiFramework', 'MySQL', 'JavaScript', 'Jquery', 'DataTables','HTML', 'UiKit', 'CSS'],
         descripcion: 'Desarrollado para gestionar los pagos realizados por los usuarios, cuando se genera un pedido y se realiza un pago este pasa por este módulo donde se verifica el pago y se realizan las acciones según el pago, la información de los pagos utilizada por otros módulos de contabilidad para cálculos internos de la empresa y tener un mejor control sobre las finanzas',
@@ -189,7 +189,7 @@ infoPersonal : InterfacePersonal[] = [
     },
     {
        id: 8,
-        name: 'Modulo de Status de la APP móvil',
+        name: 'Modulo de Status de la App Móvil',
         empresa: 'Así de Rápido C.A',
         tecnologias: ['PHP', 'YiiFramework', 'MySQL', 'JavaScript', 'Jquery', 'DataTables','HTML', 'UiKit', 'CSS'],
         descripcion: 'Este módulo fue desarrollado para dar a conocer a los usuarios desde (la App móvil Androide, IOS y el sitio web) el status en que se encuadra la App (activa, deshabilitada, actualización) estos estatus se cargan desde el panel administrativo del sistema, en el desarrollo de esta funcionalidad me toco implementar las acciones necesarias en el backend del panel admin y en la API de la aplicación móvil',
@@ -204,9 +204,9 @@ infoPersonal : InterfacePersonal[] = [
     },
     {
        id: 9,
-        name: 'Otros desarrollos',
+        name: 'Otros Desarrollos',
         empresa: 'Varias empresas y/o desarrollos propios',
-        tecnologias: ['YiiFramework', 'ElectronJS', 'Flutter', 'Dart', 'Laravel', 'NodeJS', 'ExpressJs', 'NativeScript', 'VueNative'],
+        tecnologias: ['YiiFramework', 'Electronjs', 'Flutter', 'Dart', 'Laravel', 'Nodejs', 'Expressjs', 'NativeScript', 'VueNative', 'QuasarFramework'],
         descripcion: 'He tenido muchos otros desarrollos pero actualmente no tengo acceso a ellos, otros han sido solo en Back-end por lo que es imposible que comparta información sobre ellos por motivos de seguridad y ética. He trabajado en App móviles desarrolladas con PhoneGap, con API rest en YiiFramework y  Nodejs usando Express, muchos otros desarrollos con fines educativos como: NativeScript, Flutter, Dart, Laravel, VueNative, ElectronJS y muchos más de los cuales consideró he aprendido bastante sobre ellos pero no lo necesario para considerarlos parte de mis SKILL',
         acciones: [],
         fecha: '',
@@ -215,7 +215,6 @@ infoPersonal : InterfacePersonal[] = [
         img_s: ['01']
     },
 ];
-
 
 
 infoEstudios : InterfaceEstudios[] = [
@@ -249,7 +248,7 @@ infoExperienciaLaboral : InterfaceExperienciaLaboral[] = [
         nombre: 'C.A Metro de Valencia',
         areaEmpresa: 'Transporte Masivo Subterráneo',
         cargo:  'Pasante de Sistemas de Información',
-        tareas: ['Desarrollar sistemas web', ' Soporte de Aplicaciones', ' Diseñar Soluciones para Optimizar Procesos'],
+        tareas: ['Desarrollar sistemas web', ' soporte de aplicaciones', ' diseñar soluciones para optimizar procesos'],
         inicio: '11/2016',
         fin:    '03/2017'
 
@@ -259,7 +258,7 @@ infoExperienciaLaboral : InterfaceExperienciaLaboral[] = [
         nombre: 'C.A Metro de Valencia',
         areaEmpresa: 'Transporte Masivo Subterráneo',
         cargo:  'Analista de Sistemas B',
-        tareas: ['Desarrollar sistemas web', ' Soporte de Aplicaciones', ' Diseñar Soluciones para Optimizar Procesos'],
+        tareas: ['Desarrollar sistemas web', ' soporte de aplicaciones', ' diseñar soluciones para optimizar procesos'],
         inicio: '06/2017',
         fin:    '07/2018'
 
@@ -269,7 +268,7 @@ infoExperienciaLaboral : InterfaceExperienciaLaboral[] = [
         nombre: 'C.A Metro de Valencia',
         areaEmpresa: 'Transporte Masivo Subterráneo',
         cargo:  'Consultor Sénior de Tecnologías',
-        tareas: ['Desarrollar sistemas web', ' Soporte de Aplicaciones', ' Diseñar Soluciones para Optimizar Procesos'],
+        tareas: ['Desarrollar sistemas web', ' soporte de aplicaciones', ' diseñar soluciones para optimizar procesos'],
         inicio: '07/2018',
         fin:    '04/2019'
 
@@ -279,7 +278,7 @@ infoExperienciaLaboral : InterfaceExperienciaLaboral[] = [
         nombre: 'Filtros Ramírez C.A',
         areaEmpresa: 'Distribuidora de Repuestos y Accesorios de Vehículos de Motor',
         cargo:  'Asistente de Sistemas',
-        tareas: ['Soporte Técnico', ' Soporte de Aplicaciones', ' Ventas Online'],
+        tareas: ['Soporte Técnico', ' soporte de aplicaciones', ' ventas online'],
         inicio: '04/2019',
         fin:    '10/2019'
 
@@ -287,9 +286,9 @@ infoExperienciaLaboral : InterfaceExperienciaLaboral[] = [
     {
         id: 5,
         nombre: 'Así de Rápido C.A',
-        areaEmpresa: 'Servicios web y Delivery',
+        areaEmpresa: 'Servicios Web y Delivery',
         cargo:  'Desarrollador Web Back-End',
-        tareas: ['Soporte Técnico', ' Soporte de Aplicaciones', ' Ventas Online'],
+        tareas: ['Mantenimiento de sistemas web', ' mantenimiento de APIs'],
         inicio: '11/2019',
         fin:    '09/2020'
 
@@ -302,11 +301,11 @@ infoTecnologias : InterfaceTechPrograming[] = [
         nivel:  7.5,
     },
     {
-        nombre: 'NodeJS',
+        nombre: 'Nodejs',
         nivel:  6,
     },
     {
-        nombre: 'ExpressJs',
+        nombre: 'Expressjs',
         nivel:  8,
     },
     {
@@ -318,7 +317,7 @@ infoTecnologias : InterfaceTechPrograming[] = [
         nivel:  10,
     },
     {
-        nombre: 'ElectronJs',
+        nombre: 'Electronjs',
         nivel:  5,
     },
     {

@@ -5,6 +5,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+
+
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { DetailsSystemComponent } from './components/details-system/details-system.component';
@@ -23,6 +27,7 @@ import { MessageService } from 'primeng/api';
 import { ToastServiceComponent } from './components/toast-service/toast-service.component';
 import { LoadsvgPipe } from './pipes/loadsvg.pipe';
 
+import { InputSwitchModule } from 'primeng/inputswitch';
 
 @NgModule({
   declarations: [
@@ -44,7 +49,10 @@ import { LoadsvgPipe } from './pipes/loadsvg.pipe';
     ReactiveFormsModule,
     AutoCompleteModule, 
     CarouselModule, 
-    ToastModule
+    ToastModule,
+    InputSwitchModule,
+    CommonModule,
+    FormsModule
     
   ],
   providers: [MessageService],

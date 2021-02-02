@@ -1,10 +1,10 @@
-<div class="container is-mobile main" style="margin-top: 2.5rem"
+<div class="container is-mobile main mt-2"
 *ngIf="!sistema"
 >
   <h1 class="title">Error: No existe! un sistema con ese ID</h1>
 </div>
 
-<div class="container is-mobile main" style="margin-top: 2.5rem"
+<div class="container is-mobile main mt-2" 
 *ngIf="sistema"
 >
 <div class="section">
@@ -46,9 +46,9 @@
       <div class="column is-12">
          <h3 class="subtitle is-4">Tecnologías</h3>
          <div class="tags">
-            <span class="tag is-rounded is-dark"
+            <span class="tag is-rounded is-light"
             *ngFor="let tecnologia of sistema.tecnologias"
-            >{{ tecnologia }}</span>
+            ><b>{{ tecnologia }}</b></span>
 
           </div>
       </div>
@@ -77,7 +77,7 @@
               </ul>
           </div>
 
-          <div *ngIf="sistema.tareas?.length > 0">
+          <div *ngIf="sistema.tareas?.length > 0" class="mt-4">
             <p class="subtitle is-4">Tareas:</p>
               <ul>
                 <li *ngFor="let tarea of sistema.tareas">{{ tarea }}.</li>

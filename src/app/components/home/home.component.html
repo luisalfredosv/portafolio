@@ -1,5 +1,5 @@
 <!-- informacion -->
-<div class="container is-mobile section" style="margin-top: 2rem" id="informacion">
+<div class="container is-mobile section mt-2">
 
 
 
@@ -31,7 +31,7 @@
       </div> 
   
       <div class="row mt-6">
-        <a class="button is-dark m-1" target="_blank" 
+        <a class="button m-1" target="_blank" 
         [href]='infoPersonal[0].cv'>
           <span class="icon">
           <i class="fas fa-file-pdf"></i>
@@ -39,7 +39,7 @@
           <span>CV</span>
         </a>
       
-        <a class="button is-dark m-1" target="_blank" 
+        <a class="button m-1" target="_blank" 
         [href]='infoPersonal[0].gitHub'>
           <span class="icon">
             <i class="fab fa-github"></i>
@@ -47,7 +47,7 @@
           <span>GitHub</span>
         </a>
       
-        <a class="button is-dark m-1" target="_blank" 
+        <a class="button m-1" target="_blank" 
         [href]='infoPersonal[0].linkeIn'>
           <span class="icon">
             <i class="fab fa-linkedin"></i>
@@ -55,7 +55,7 @@
           <span>LinkedIn</span>
         </a>
       
-        <a class="button is-dark m-1" target="_blank" 
+        <a class="button m-1" target="_blank" 
         [href]='infoPersonal[0].telegram'>
           <span class="icon">
             <i class="fab fa-telegram-plane"></i>
@@ -99,7 +99,7 @@
     </div>
 
 
- <div class="row mt-2">
+ <div class="row mt-5">
   <p class="subtitle is-4">Estudios Realizados</p>
   <div class="columns">
     <div class="column" *ngFor="let estudio of infoEstudios">
@@ -112,7 +112,7 @@
         <div class="media-content">
           <div class="content">
             <!-- <p> -->
-              <p class="subtitle is-5 mt-1">{{ estudio.titulo }} ({{ estudio.status }})</p>
+              <p class="title is-5 mt-1">{{ estudio.titulo }} ({{ estudio.status }})</p>
               <small> {{ estudio.nombre }} ({{ estudio.siglas }}) </small> 
               <!-- <b> </b> -->
               <br>
@@ -147,7 +147,7 @@
   
       <h1 class="title">Habilidades</h1>
   
-      <p class="subtitle is-4 mt-1">Tecnologías</p>
+      <p class="subtitle is-4 mt-4">Tecnologías</p>
       <div class="columns is-multiline">
         <div class="column is-2"
         *ngFor="let tecnologia of infoTecnologias"
@@ -160,7 +160,7 @@
                   >
                 </figure>
               </div>
-              <div class="media-content">
+              <div>
                 <h6 class="subtitle is-6">
                 {{ tecnologia.nombre }}</h6>
               </div>
@@ -172,7 +172,7 @@
     </div>
 
 
-    <p class=" subtitle is-4 mt-1">Bases de Datos </p>
+    <p class=" subtitle is-4 mt-4">Bases de Datos </p>
   
     <div class="columns is-multiline">
 
@@ -185,7 +185,7 @@
             <img [src]=" basedato.nombre.toLowerCase()  | loadsvg:'tecnologias'">
           </figure>
         </div>
-        <div class="media-content">
+        <div>
             <h6 class="subtitle is-5">{{ basedato.nombre }}</h6>
         </div>
       </div>
@@ -195,9 +195,9 @@
       </div> 
     </div> 
   
-    <p class=" subtitle is-4 mt-1">Lenguajes de Programación </p>
+    <p class="subtitle is-4 mt-4">Lenguajes de Programación </p>
     <div class="columns is-multiline">
-      <div class="column "
+      <div class="column"
       *ngFor="let lenguaje of infoLenguajesProgramacion"
       >
       <div class="media">
@@ -206,7 +206,7 @@
             <img [src]=" lenguaje.nombre.toLowerCase()  | loadsvg:'tecnologias'">
           </figure>
         </div>
-        <div class="media-content">
+        <div>
           <h6 class="subtitle is-5">{{ lenguaje.nombre }}</h6>
         </div>
       </div>
@@ -247,29 +247,31 @@
               <p class="subtitle is-6">@johnsmith</p>
             </div>
           </div> -->
-          <div class="media-content">
+          <div>
             <p class="title is-5">{{ sistema.name }}</p>
           </div>
           <div class="content mt-1">
-              <p class="has-text-justified"> {{ sistema.descripcion.substr(0,85) }}...
-                <a (click)="detailsSystem(sistema.id)"> ver más</a>
-              </p> 
-            <div class="tags mt-2">
-              <span class="tag is-dark is-rounded"
+                   <div class="tags mt-2">
+              <span class="tag is-light is-rounded"
               *ngFor="let tecnologia of sistema.tecnologias"
-              >{{ tecnologia }}</span>
+              ><b>{{ tecnologia }}</b></span>
   
-            </div>
+            </div> 
+
+            <span class="has-text-justified"> {{ sistema.descripcion.substr(0,85) }}...
+                <a (click)="detailsSystem(sistema.id)"> ver más</a>
+              </span> 
+      
             <!-- <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time> -->
           </div>
-            <button class="button is-fullwidth is-rounded"
+            <button class="button is-fullwidth"
             (click)="detailsSystem(sistema.id)"
             >
               <span class="icon">
                 <i class="fas fa-info-circle"></i>
               </span>
-              <span>Más info...</span>
-            </button>
+              <span>Detalles</span>
+            </button> 
         </div>
       </div>
     </div>  
@@ -282,36 +284,31 @@
   <hr class="hr" style="margin-bottom: 0;">
   <div class="container is-mobile section" id="experiencia">
     <h1 class="title">Experiencia</h1>
-    <div class="rows" 
+    <div class="rows m-2" 
     *ngFor="let experiencia of infoExperienciaLaboral"
     >
-      <div class="row">
-        <span  class="subtitle is-4 mt-2">{{ experiencia.nombre }}</span>
-         <br>
-        <span  class="subtitle is-6">{{ experiencia.areaEmpresa }}</span>
-        <article class="media">
-          <!-- <figure class="media-left">
-            <p class="image is-64x64">
-              <img src="">
-            </p>
-          </figure> -->
-          <div class="media-content ml-4">
-            <div class="content">
-              <p>
-                <strong>{{ experiencia.cargo }}</strong>
-                <br>
-                <strong>Tareas: </strong>{{ experiencia.tareas }}
-                <br>
-                <strong>Tiempo: </strong>{{ experiencia.inicio }} - {{ experiencia.fin }}
-                <!--<br>
-                <small><a>Like</a> • <a>Reply</a> • 3 hrs</small>-->
-              </p>
-            </div>
-          </div>
-        </article>
+
+  <div class="row mt-2">
+    <h1  class="title is-4">
+       {{ experiencia.cargo }}
+    </h1>
+    <h2  class="is-6">
+      {{ experiencia.nombre }}
+    </h2>
+    <h3 class="is-6">
+     {{ experiencia.areaEmpresa }}
+    </h3>
+      <div class="content mb-4">
+
+          <ul>
+            <li><strong>Tareas: </strong>{{ experiencia.tareas }}</li>
+
+            <li><strong>Tiempo: </strong>{{ experiencia.inicio }} - {{ experiencia.fin }}</li>
+          </ul>
+          
+        </div>
       </div>
-      <br>
-    </div>
+
   </div>
     
   
@@ -325,7 +322,7 @@
    <div class="field">
       <label class="label">Nombre y Apellido</label>
       <div class="control">
-        <input class="input is-rounded" type="text" placeholder="Albus Percival Wulfric Brian Dumbledore"
+        <input class="input" type="text" placeholder="Albus Percival Wulfric Brian Dumbledore"
         name="nombre"
         formControlName="nombre"
         [ngClass]="{ 'is-danger': submitted && f.nombre.errors }"
@@ -339,7 +336,7 @@
     <div class="field">
       <label class="label">Asunto</label>
       <div class="control">
-        <div class="select is-rounded">
+        <div class="select">
           <select
             name="asunto"
             formControlName="asunto"
@@ -360,7 +357,7 @@
     <div class="field">
       <label class="label">Correo de contacto</label>
       <div class="control">
-        <input class="input is-rounded" type="mail" placeholder="Correo a donde te responderé..."
+        <input class="input" type="mail" placeholder="Correo a donde te responderé..."
         name="correo"
         formControlName="correo"
         [ngClass]="{ 'is-danger': submitted && f.correo.errors }"
@@ -375,7 +372,7 @@
     <div class="field">
       <label class="label">Mensaje</label>
       <div class="control">
-        <textarea class="textarea is-rounded" placeholder="Hazme saber tu mensaje... &#10;Hola soy Albus Dumbledore, de la Academia de Magia y Hechiseria Hodwarts, te escribo para..."
+        <textarea class="textarea" placeholder="Hazme saber tu mensaje... &#10;Hola soy Albus Dumbledore, de la Academia de Magia y Hechicería Hogwarts, te escribo para..."
           name="mensaje"
           formControlName="mensaje"
           [ngClass]="{ 'is-danger': submitted && f.mensaje.errors }"
@@ -405,7 +402,7 @@
       <button 
       [disabled]="loading"
       [ngClass]="{'': !loading, 'is-loading': loading}"
-      class="button is-rounded is-dark"
+      class="button is-primary"
       >
         <span class="icon">
           <!-- <i class="fab fa-telegram"></i> -->
@@ -417,7 +414,7 @@
       </button>
 
       <button (click)="onReset()"
-      class="button  ml-2 is-rounded is-danger ">
+      class="button  ml-2 is-danger ">
         <span class="icon">
           <i class="fas fa-trash"></i>
         </span>
