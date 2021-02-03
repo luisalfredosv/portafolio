@@ -18,10 +18,11 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forRoot(routes, {
+    useHash: false, 
     onSameUrlNavigation: "ignore",
     anchorScrolling:'enabled',
     scrollPositionRestoration: 'enabled',
-    scrollOffset: [0, 64]
+    // scrollOffset: [0, 64]
   })],
   exports: [RouterModule]
 })
