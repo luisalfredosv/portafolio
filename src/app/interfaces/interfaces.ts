@@ -11,12 +11,13 @@ export interface InterfacePersonal {
     correoOne: string,
     correoTwo: string,
     telegram: string,
-    linkeIn: string,
+    linkedIn: string,
     gitHub: string,
     cv: string,
     ocupaciones: string[],
     hobbies: string[],
-    descripcion: string
+    descripcion: string,
+    infoextra: string
 }
 
 export interface InterfaceEstudios{

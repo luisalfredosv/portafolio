@@ -46,23 +46,23 @@ infoPersonal : InterfacePersonal[] = [
         correoOne: 'luissarabia80@gmail.com',
         correoTwo: 'lasv80@outlook.com',
         telegram: 'https://t.me/luisalfredosv',
-        linkeIn: 'https://linkedin.com/in/luisalfredosv',
+        linkedIn: 'https://linkedin.com/in/luisalfredosv',
         gitHub: 'https://github.com/luisalfredosv',
         cv: 'assets/docs/cv-dev-luis-sarabia.pdf',
-        ocupaciones: ['Desarrollador Full-Stack de WebApps'],
+        ocupaciones: ['Desarrollador Full-Stack de Web Apps'],
         hobbies:[
-            'Probar nuevas tecnologías siguiendo cursos.',
             'Ver documentales, series y películas.',
             'Escuchar música dubstep o electrojunkie.', 
             'Jugar PUBG Mobile, Factorio, COD, CSGO, Royal Revolt 2, EuroTruck 2',
-            'Leer informaciones sobre el mundo tecnológico y nuevos avances.'
+            'Leer noticias sobre los nuevos avences en el mundo de la tecnología.'
         ],
 
-        descripcion:'Hola soy Luis, un desarrollador semi-senior con 5 años de experiencia en el desarrollo de webapp. Soy un apasionado por el arte de la programación, por crear herramientas y soluciones informáticas, soy TSU en Análisis de Sistemas, actualmente me encuentro estudiando el 3er año de Ingeniería en Informática, he tenido múltiples experiencias a nivel laboral que me han ayudado a mejorar mis conocimientos, siempre me encuentro haciendo cursos e investigando nuevas tecnologías y probándolas con el fin de aprender y elegir la correcta cuando sea necesario… ',
+        descripcion:'Hola soy Luis, un desarrollador semi-senior con 5 años de experiencia en el desarrollo de web app, apasionado por el arte de la programación, por crear herramientas y soluciones informáticas, TSU en Análisis de Sistemas y estoy estudiando el 3er año de Ingeniería en Informática, he tenido múltiples experiencias a nivel laboral que me han ayudado a mejorar mis conocimientos, siempre hago cursos, investigo nuevas tecnologías y experimento con el fin de aprender y elegir la más adecuada para el desarrollo de cada proyecto.',
+
+        infoextra:''
 
     }
 ];
-
 
  infoSistemasRealizados : InterfaceSistemasRealizados[] = [
     {
@@ -70,12 +70,12 @@ infoPersonal : InterfacePersonal[] = [
         name: 'Registro de Operativos',
         empresa: 'C.A Metro de Valencia',
         tecnologias: ['PHP', 'MySQL', 'JavaScript', 'HTML', 'Bootstrap', 'CSS'],
-        descripcion: 'Este fue mi primer sistema desarrollado para un empresa con el cual aprendí mucho, también debo decir que fue mi proyecto de pasantías, Fue de desarrollado para llevar control de los operativos que se realizan en dicha empresa, se registran los operativos, se asignan según la gerencia y empleado deseen, se realiza el cálculo que se debe pagar, para luego registrar la entrega del objeto de dicho operativo a los empleados y asi evitar llevar registros en papel y que se preste para ocultamiento de información',
+        descripcion: 'Mi primer desarrollo, el cual realice para una empresa donde obtuve grandes conocimientos, ademas fue mi proyecto de pasantías, el objetivo principal del sistema era llevar un registro y control de los operativos alimenticios realizados en dicha empresa',
         acciones: [
                     'Gestión de operativos',
                     'Gestión de cuentas por pagar',
-                    'Gestión de entregas de objetos del operativo',
-                    'Reportes de todo lo que se registró'
+                    'Gestión de entregas de productos del operativo',
+                    'Reporte general de los registros'
                     ],
         fecha: '10/2017',
         tareas: ['Análisis', 'Desarrollo', 'Testing'],
@@ -88,7 +88,7 @@ infoPersonal : InterfacePersonal[] = [
         name: 'Registro de Visitantes',
         empresa: 'C.A Metro de Valencia',
         tecnologias: ['PHP', 'MySQL', 'JavaScript', 'Jquery', 'DataTables', 'JqueryUI', 'Webcodecamjs', 'HTML', 'Bootstrap', 'CSS'],
-        descripcion: 'Desarrollado para llevar control de los visitantes a la empresa, esto incluye a los empleados en el caso de que entren a la empresa con un computador, en el cual al pasar por vigilancia se le toman los datos para regístralos en el sistema tomando una foto del visitante para dejar total constancia del visitante en los registros, el registro se realiza de forma detallada donde se describe a quien viene a ver y en que parte del edificio será la visita, al irse se le registra la salida y el registro del visitante se cierra',
+        descripcion: 'Desarrollado para llevar control de los visitantes a la empresa, esto incluye a los empleados en el caso de que entren a la empresa con un computador, en el cual al pasar por vigilancia se le toman los datos para regístralos en el sistema tomando una foto del visitante para dejar total constancia del visitante en los registros, el registro se realiza de forma detallada donde se describe a quien viene a ver y en que parte del edificio será la visita, al irse se le registra la salida y el registro del visitante se cierra.',
         acciones: [
                     'Gestión de visitante',
                     'Gestión de Vehículos o equipos de computación',
@@ -105,7 +105,7 @@ infoPersonal : InterfacePersonal[] = [
         name: 'Venta de Espacios Publicitarios',
         empresa: 'C.A Metro de Valencia',
         tecnologias: ['PHP', 'MySQL', 'JavaScript', 'Jquery', 'DataTables', 'JqueryUI', 'HTML', 'Bootstrap', 'CSS'],
-        descripcion: 'Es un sistema de venta de espacios publicitarios que gestiona totalmente los procesos manuales llevándolos al sistema de forma digital, en el cual se gestionan presupuestos, venta de espacios publicitarios, cobros y contratos, todo queda registrado en el sistema el cual muestra e imprime reportes de los datos almacenados en el mismo',
+        descripcion: 'Es un sistema de venta de espacios publicitarios que gestiona totalmente los procesos manuales llevándolos al sistema de forma digital, en el que se gestionan presupuestos, venta de espacios publicitarios, cobros y contratos, también imprime reportes de los datos almacenados en el mismo.',
         acciones: [
                     'Gestión de presupuestos',
                     'Gestión de espacios publicitarios',
@@ -124,7 +124,7 @@ infoPersonal : InterfacePersonal[] = [
         name: 'Control y Gestión de Almacén',
         empresa: 'C.A Metro de Valencia',
         tecnologias: ['PHP', 'MySQL', 'JavaScript', 'Jquery', 'DataTables', 'JqueryUI', 'QRcodelib', 'Webcodecamjs','HTML', 'Bootstrap', 'CSS'],
-        descripcion: 'Gestiona las herramientas, repuestos y todo objeto que la empresa requiera tener un control sobre con el consumo y uso del mismo, durante los procesos los usuarios admin y los usuarios que soliciten repuestos o herramientas usan identificadores QR para poder firmar y dejar constancia de que todo lo que se registró en el sistema es totalmente seguro y real y así evitar robos o encubrimiento de información, dicho sistema necesita acceso a una cámara web de lo contrario no se podrá usar para gestionar entrada y salida de objetos, ya que este es su principal método de autenticación, y el acceso a códigos QR es limitado por el admin del sistema .',
+        descripcion: 'Gestiona las herramientas, repuestos y todo objeto que la empresa requiera tener un control sobre con el consumo y uso del mismo, durante los procesos los usuarios admin y los usuarios que soliciten repuestos o herramientas usan identificadores QR para poder firmar y dejar constancia de que todo lo que se registró en el sistema es totalmente seguro y real y así evitar robos o encubrimiento de información, dicho sistema necesita acceso a una cámara web de lo contrario no se podrá usar para gestionar entrada y salida de objetos, ya que este es su principal método de autenticación, y el acceso a códigos QR es limitado por el admin del sistema.',
         acciones: [
                     'Gestión de solicitud de herramientas, respuestas, consumibles',
                     'Verificación de los involucrados en el proceso mediante códigos QR',
@@ -141,7 +141,7 @@ infoPersonal : InterfacePersonal[] = [
         name: 'Modulo de Gestión Pagos',
         empresa: 'Así de Rápido C.A',
         tecnologias: ['PHP', 'YiiFramework', 'MySQL', 'JavaScript', 'Jquery', 'DataTables','HTML', 'UiKit', 'CSS'],
-        descripcion: 'Desarrollado para gestionar los pagos realizados por los usuarios, cuando se genera un pedido y se realiza un pago este pasa por este módulo donde se verifica el pago y se realizan las acciones según el pago, la información de los pagos utilizada por otros módulos de contabilidad para cálculos internos de la empresa y tener un mejor control sobre las finanzas',
+        descripcion: 'Desarrollado para gestionar los pagos realizados por los usuarios, cuando se genera un pedido y se realiza un pago este pasa por este módulo donde se verifica el pago y se realizan las acciones correspondientes, la información de los pagos es utilizada por otros módulos de contabilidad para cálculos internos de la empresa y tener un mejor control sobre las finanzas',
         acciones: [
                     'Registrar pagos desde el panel administrativo del sistema o desde la App móvil a través de la API',
                     'Gestionar pagos y verificar en los distintos bancos o servicios de pagos',
@@ -158,11 +158,11 @@ infoPersonal : InterfacePersonal[] = [
         name: 'Modulo de Pedidos Externos',
         empresa: 'Así de Rápido C.A',
         tecnologias: ['PHP', 'YiiFramework', 'MySQL', 'Javascript', 'Jquery', 'DataTables','HTML', 'UiKit', 'CSS'],
-        descripcion: 'Este es un subsistema alterno que permite el registro de pedidos a establecimientos no afiliados a los servicios de la empresa, sin embargo se les permite usar el servicio de Delivery y para ellos los pedidos que no son realizados desde la App móvil, estos pedidos son registrados desde el panel administrativo para tener historial de los mismos; en este sistema desarrolle las funciones necesarias en los tres sistemas de la empresa (panel admin, API de usuarios, API de Motorizados) las cuales funcionan en conjunto con una misma información que es dividida y almacenada en cada sistema.',
+        descripcion: 'Este es un subsistema alterno que permite el registro de pedidos a establecimientos no afiliados a los servicios de la empresa, sin embargo se les permite usar el servicio de Delivery, estos pedidos son registrados desde el panel administrativo para tener historial de los mismos; en este sistema desarrolle las funciones necesarias en los tres sistemas de la empresa (panel admin, API de clientes, API de Motorizados) las cuales funcionan en conjunto con una misma información que es dividida y almacenada en cada sistema.',
         acciones: [
                     'Gestionar pedidos externos a establecimientos no afiliados a los servicios de la empresa',
                     'Gestionar la entrega de pedido desde el panel admin de motorizados',
-                    'Enviar el pedido a la APP móvil de quien entregara el pedido al cliente'
+                    'Enviar el pedido a la app móvil de quien entregara el pedido al cliente'
                     ],
         fecha: '06/2020',
         tareas: ['Creación','Mantenimiento', 'Actualizaciones'],
@@ -175,11 +175,11 @@ infoPersonal : InterfacePersonal[] = [
         name: 'Modulo de Gestión de Publicidad',
         empresa: 'Así de Rápido C.A',
         tecnologias: ['PHP', 'YiiFramework', 'MySQL', 'JavaScript', 'Jquery', 'DataTables','HTML', 'UiKit', 'CSS'],
-        descripcion: 'Desarrolle un sistema de publicidad y promociones, que se gestiona desde el panel admin, la publicidad y promociones son mostradas en la App móvil a los usuarios; el sistema no analiza información de los usuarios ni muestra información basada en sus datos al contrario de todo esto el espacio publicitario es vendido a establecimientos y el sistema maneja la carga de imágenes, el tiempo que estará disponible, el status y el posicionamiento',
+        descripcion: 'Desarrolle un sistema de publicidad y promociones, que se gestiona desde el panel admin, la publicidad y promociones son mostradas en la app móvil a los usuarios; el sistema no analiza información de los usuarios ni muestra información basada en sus datos al contrario de todo esto el espacio publicitario es vendido a establecimientos y el sistema maneja la carga de imágenes, el tiempo que estará disponible, el status y el posicionamiento',
         acciones: [
                     'Gestión del espacio publicitario',
                     'Listar historial',
-                    'Enviar la data necesaria a la API y que esta envié la información a la App móvil'
+                    'Enviar la data necesaria a la API y que esta envié la información a la app móvil'
                     ],
         fecha: '03/2019',
         tareas: ['Creación','Mantenimiento', 'Actualizaciones'],
@@ -192,9 +192,9 @@ infoPersonal : InterfacePersonal[] = [
         name: 'Modulo de Status de la App Móvil',
         empresa: 'Así de Rápido C.A',
         tecnologias: ['PHP', 'YiiFramework', 'MySQL', 'JavaScript', 'Jquery', 'DataTables','HTML', 'UiKit', 'CSS'],
-        descripcion: 'Este módulo fue desarrollado para dar a conocer a los usuarios desde (la App móvil Androide, IOS y el sitio web) el status en que se encuadra la App (activa, deshabilitada, actualización) estos estatus se cargan desde el panel administrativo del sistema, en el desarrollo de esta funcionalidad me toco implementar las acciones necesarias en el backend del panel admin y en la API de la aplicación móvil',
+        descripcion: 'Este módulo fue desarrollado para dar a conocer a los usuarios desde (la app móvil Android, IOS y el sitio web) el status en que se encuadra la app (activa, deshabilitada, actualización) estos estatus se cargan desde el panel administrativo del sistema, en el desarrollo de esta funcionalidad me toco implementar las acciones necesarias en el backend del panel admin y en la API de la aplicación móvil',
         acciones: [
-                    'Gestionar los status de la App móvil desde el panel administrativo',
+                    'Gestionar los status de la app móvil desde el panel administrativo',
                     'Listar historial de status'
                     ],
         fecha: '07/2020',
@@ -207,7 +207,7 @@ infoPersonal : InterfacePersonal[] = [
         name: 'Otros Desarrollos',
         empresa: 'Varias empresas y/o desarrollos propios',
         tecnologias: ['YiiFramework', 'Electronjs', 'Flutter', 'Dart', 'Laravel', 'Nodejs', 'Expressjs', 'NativeScript', 'VueNative', 'QuasarFramework'],
-        descripcion: 'He tenido muchos otros desarrollos pero actualmente no tengo acceso a ellos, otros han sido solo en Back-end por lo que es imposible que comparta información sobre ellos por motivos de seguridad y ética. He trabajado en App móviles desarrolladas con PhoneGap, con API rest en YiiFramework y  Nodejs usando Express, muchos otros desarrollos con fines educativos como: NativeScript, Flutter, Dart, Laravel, VueNative, ElectronJS y muchos más de los cuales consideró he aprendido bastante sobre ellos pero no lo necesario para considerarlos parte de mis SKILL',
+        descripcion: 'He tenido muchos otros desarrollos pero actualmente no tengo acceso a ellos, otros han sido solo en Back-end por lo que es imposible que comparta información sobre ellos por motivos de seguridad y ética. Tengo experiencia trabajado en app móviles hibridas con PhoneGap, con API rest en YiiFramework y  Nodejs usando Expressjs, muchos otros desarrollos con fines educativos como: NativeScript, Flutter, Dart, Laravel, VueNative, ElectronJS, QuasarFramework y muchos más de los cuales consideró he aprendido bastante sobre ellos pero no lo necesario para considerarlos parte de mis skills',
         acciones: [],
         fecha: '',
         tareas: ['Mantenimiento', 'Actualizaciones'],
@@ -246,7 +246,7 @@ infoExperienciaLaboral : InterfaceExperienciaLaboral[] = [
     {
         id: 1,
         nombre: 'C.A Metro de Valencia',
-        areaEmpresa: 'Transporte Masivo Subterráneo',
+        areaEmpresa: 'Transporte masivo subterráneo',
         cargo:  'Pasante de Sistemas de Información',
         tareas: ['Desarrollar sistemas web', ' soporte de aplicaciones', ' diseñar soluciones para optimizar procesos'],
         inicio: '11/2016',
@@ -256,7 +256,7 @@ infoExperienciaLaboral : InterfaceExperienciaLaboral[] = [
     {
         id: 2,
         nombre: 'C.A Metro de Valencia',
-        areaEmpresa: 'Transporte Masivo Subterráneo',
+        areaEmpresa: 'Transporte masivo subterráneo',
         cargo:  'Analista de Sistemas B',
         tareas: ['Desarrollar sistemas web', ' soporte de aplicaciones', ' diseñar soluciones para optimizar procesos'],
         inicio: '06/2017',
@@ -266,7 +266,7 @@ infoExperienciaLaboral : InterfaceExperienciaLaboral[] = [
     {
         id: 3,
         nombre: 'C.A Metro de Valencia',
-        areaEmpresa: 'Transporte Masivo Subterráneo',
+        areaEmpresa: 'Transporte masivo subterráneo',
         cargo:  'Consultor Sénior de Tecnologías',
         tareas: ['Desarrollar sistemas web', ' soporte de aplicaciones', ' diseñar soluciones para optimizar procesos'],
         inicio: '07/2018',
@@ -276,7 +276,7 @@ infoExperienciaLaboral : InterfaceExperienciaLaboral[] = [
     {
         id: 4,
         nombre: 'Filtros Ramírez C.A',
-        areaEmpresa: 'Distribuidora de Repuestos y Accesorios de Vehículos de Motor',
+        areaEmpresa: 'Distribuidora de repuestos y accesorios de vehículos de motor',
         cargo:  'Asistente de Sistemas',
         tareas: ['Soporte Técnico', ' soporte de aplicaciones', ' ventas online'],
         inicio: '04/2019',
@@ -286,7 +286,7 @@ infoExperienciaLaboral : InterfaceExperienciaLaboral[] = [
     {
         id: 5,
         nombre: 'Así de Rápido C.A',
-        areaEmpresa: 'Servicios Web y Delivery',
+        areaEmpresa: 'Servicios web y delivery',
         cargo:  'Desarrollador Web Back-End',
         tareas: ['Mantenimiento de sistemas web', ' mantenimiento de APIs'],
         inicio: '11/2019',
