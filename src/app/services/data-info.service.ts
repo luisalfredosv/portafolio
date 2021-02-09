@@ -54,7 +54,7 @@ infoPersonal : InterfacePersonal[] = [
             'Ver documentales, series y películas.',
             'Escuchar música dubstep o electrojunkie.', 
             'Jugar PUBG Mobile, Factorio, COD, CSGO, Royal Revolt 2, EuroTruck 2',
-            'Leer noticias sobre los nuevos avences en el mundo de la tecnología.'
+            'Leer noticias sobre los nuevos avances en el mundo de la tecnología.'
         ],
 
         descripcion:'Hola soy Luis, un desarrollador semi-senior con 5 años de experiencia en el desarrollo de web app, apasionado por el arte de la programación, por crear herramientas y soluciones informáticas, TSU en Análisis de Sistemas y estoy estudiando el 3er año de Ingeniería en Informática, he tenido múltiples experiencias a nivel laboral que me han ayudado a mejorar mis conocimientos, siempre hago cursos, investigo nuevas tecnologías y experimento con el fin de aprender y elegir la más adecuada para el desarrollo de cada proyecto.',
@@ -70,7 +70,7 @@ infoPersonal : InterfacePersonal[] = [
         name: 'Registro de Operativos',
         empresa: 'C.A Metro de Valencia',
         tecnologias: ['PHP', 'MySQL', 'JavaScript', 'HTML', 'Bootstrap', 'CSS'],
-        descripcion: 'Mi primer desarrollo, el cual realice para una empresa donde obtuve grandes conocimientos, ademas fue mi proyecto de pasantías, el objetivo principal del sistema era llevar un registro y control de los operativos alimenticios realizados en dicha empresa',
+        descripcion: 'Mi primer desarrollo, el cual realice para una empresa donde obtuve grandes conocimientos, además fue mi proyecto de pasantías, el objetivo principal del sistema era llevar un registro y control de los operativos alimenticios realizados en dicha empresa',
         acciones: [
                     'Gestión de operativos',
                     'Gestión de cuentas por pagar',
@@ -88,10 +88,10 @@ infoPersonal : InterfacePersonal[] = [
         name: 'Registro de Visitantes',
         empresa: 'C.A Metro de Valencia',
         tecnologias: ['PHP', 'MySQL', 'JavaScript', 'Jquery', 'DataTables', 'JqueryUI', 'Webcodecamjs', 'HTML', 'Bootstrap', 'CSS'],
-        descripcion: 'Desarrollado para llevar control de los visitantes a la empresa, esto incluye a los empleados en el caso de que entren a la empresa con un computador, en el cual al pasar por vigilancia se le toman los datos para regístralos en el sistema tomando una foto del visitante para dejar total constancia del visitante en los registros, el registro se realiza de forma detallada donde se describe a quien viene a ver y en que parte del edificio será la visita, al irse se le registra la salida y el registro del visitante se cierra.',
+        descripcion: 'Desarrollado para llevar control de los visitantes en la empresa para dejar total constancia da la visita, se realiza de forma detallada donde se describe a quien viene a ver y en que parte del edificio será la visita, al irse se le registra la salida y el registro del visitante se cierra.',
         acciones: [
                     'Gestión de visitante',
-                    'Gestión de Vehículos o equipos de computación',
+                    'Gestión de vehículos o equipos de computación',
                     'Reportes de datos'
                     ],
         fecha: '03/2018',
@@ -124,7 +124,7 @@ infoPersonal : InterfacePersonal[] = [
         name: 'Control y Gestión de Almacén',
         empresa: 'C.A Metro de Valencia',
         tecnologias: ['PHP', 'MySQL', 'JavaScript', 'Jquery', 'DataTables', 'JqueryUI', 'QRcodelib', 'Webcodecamjs','HTML', 'Bootstrap', 'CSS'],
-        descripcion: 'Gestiona las herramientas, repuestos y todo objeto que la empresa requiera tener un control sobre con el consumo y uso del mismo, durante los procesos los usuarios admin y los usuarios que soliciten repuestos o herramientas usan identificadores QR para poder firmar y dejar constancia de que todo lo que se registró en el sistema es totalmente seguro y real y así evitar robos o encubrimiento de información, dicho sistema necesita acceso a una cámara web de lo contrario no se podrá usar para gestionar entrada y salida de objetos, ya que este es su principal método de autenticación, y el acceso a códigos QR es limitado por el admin del sistema.',
+        descripcion: 'Gestiona las herramientas, repuestos y todo objeto que la empresa requiera tener un control sobre con el consumo y uso del mismo, durante los procesos los usuarios admin y los usuarios que soliciten repuestos o herramientas usan identificadores QR para poder firmar y dejar constancia de que todo lo que se registró en el sistema es totalmente seguro y verídico y así evitar robos o encubrimiento de información, dicho sistema necesita acceso a una cámara web de lo contrario no se podrá usar para gestionar entrada y salida de objetos, ya que este es su principal método de autenticación, y el acceso a códigos QR es limitado por el admin del sistema.',
         acciones: [
                     'Gestión de solicitud de herramientas, respuestas, consumibles',
                     'Verificación de los involucrados en el proceso mediante códigos QR',
@@ -175,7 +175,7 @@ infoPersonal : InterfacePersonal[] = [
         name: 'Modulo de Gestión de Publicidad',
         empresa: 'Así de Rápido C.A',
         tecnologias: ['PHP', 'YiiFramework', 'MySQL', 'JavaScript', 'Jquery', 'DataTables','HTML', 'UiKit', 'CSS'],
-        descripcion: 'Desarrolle un sistema de publicidad y promociones, que se gestiona desde el panel admin, la publicidad y promociones son mostradas en la app móvil a los usuarios; el sistema no analiza información de los usuarios ni muestra información basada en sus datos al contrario de todo esto el espacio publicitario es vendido a establecimientos y el sistema maneja la carga de imágenes, el tiempo que estará disponible, el status y el posicionamiento',
+        descripcion: 'Desarrolle un sistema de publicidad y promociones, que se gestiona desde el panel admin, la publicidad y promociones son mostradas en la app móvil a los usuarios; el sistema no analiza información de los usuarios ni muestra información basada en sus datos al contrario de todo esto el espacio publicitario es vendido a establecimientos y el sistema maneja la carga de imágenes, el tiempo que estará disponible, el estatus y el posicionamiento',
         acciones: [
                     'Gestión del espacio publicitario',
                     'Listar historial',
@@ -189,12 +189,12 @@ infoPersonal : InterfacePersonal[] = [
     },
     {
        id: 8,
-        name: 'Modulo de Status de la App Móvil',
+        name: 'Modulo de Estatus de la App Móvil',
         empresa: 'Así de Rápido C.A',
         tecnologias: ['PHP', 'YiiFramework', 'MySQL', 'JavaScript', 'Jquery', 'DataTables','HTML', 'UiKit', 'CSS'],
-        descripcion: 'Este módulo fue desarrollado para dar a conocer a los usuarios desde (la app móvil Android, IOS y el sitio web) el status en que se encuadra la app (activa, deshabilitada, actualización) estos estatus se cargan desde el panel administrativo del sistema, en el desarrollo de esta funcionalidad me toco implementar las acciones necesarias en el backend del panel admin y en la API de la aplicación móvil',
+        descripcion: 'Este módulo fue desarrollado para dar a conocer a los usuarios desde (la app móvil Android, IOS y el sitio web) el estatus en que se encuadra la app (activa, deshabilitada, actualización) estos estatus se cargan desde el panel administrativo del sistema, en el desarrollo de esta funcionalidad me toco implementar las acciones necesarias en el backend del panel admin y en la API de la aplicación móvil',
         acciones: [
-                    'Gestionar los status de la app móvil desde el panel administrativo',
+                    'Gestionar los estatus de la app móvil desde el panel administrativo',
                     'Listar historial de status'
                     ],
         fecha: '07/2020',
@@ -207,7 +207,7 @@ infoPersonal : InterfacePersonal[] = [
         name: 'Otros Desarrollos',
         empresa: 'Varias empresas y/o desarrollos propios',
         tecnologias: ['YiiFramework', 'Electronjs', 'Flutter', 'Dart', 'Laravel', 'Nodejs', 'Expressjs', 'NativeScript', 'VueNative', 'QuasarFramework'],
-        descripcion: 'He tenido muchos otros desarrollos pero actualmente no tengo acceso a ellos, otros han sido solo en Back-end por lo que es imposible que comparta información sobre ellos por motivos de seguridad y ética. Tengo experiencia trabajado en app móviles hibridas con PhoneGap, con API rest en YiiFramework y  Nodejs usando Expressjs, muchos otros desarrollos con fines educativos como: NativeScript, Flutter, Dart, Laravel, VueNative, ElectronJS, QuasarFramework y muchos más de los cuales consideró he aprendido bastante sobre ellos pero no lo necesario para considerarlos parte de mis skills',
+        descripcion: 'He tenido muchos otros desarrollos pero actualmente no tengo acceso a ellos, otros han sido solo en Back-end por lo que es imposible que comparta información sobre ellos por motivos de seguridad y ética. Tengo experiencia trabajado en app móviles híbridas con PhoneGap, con API rest en YiiFramework y  Nodejs usando Expressjs, muchos otros desarrollos con fines educativos como: NativeScript, Flutter, Dart, Laravel, VueNative, ElectronJS, QuasarFramework y muchos más de los cuales consideró he aprendido bastante sobre ellos pero no lo necesario para considerarlos parte de mis skills',
         acciones: [],
         fecha: '',
         tareas: ['Mantenimiento', 'Actualizaciones'],
